@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#menu{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(31, 35, 31);
+}
+#header{
+    height: auto;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/564x/4f/fa/e1/4ffae1f6ebfecad0d769883aadc8b241.jpg");
+}
+.header-content{
+    margin-left:auto;
+    margin-right: auto;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+#header-content-namepic{
+    display: flex;
+}
+#mypic{
+    max-width: 200px;
+    max-height: 200px; 
+    border-radius: 100px; 
+    border: 3px solid rgb(239, 231, 220);
+}
+
+#block{
+    width: 100%;
+    background: rgb(50, 60, 41);
+    padding-bottom: 10px;
+}
+
+.inner-info-container{
+    display: block;
+    width: 100%;
+    background: rgb(170, 130, 77);
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+.inner-info-container::-webkit-scrollbar{
+    width: 0;
+    display: none;
+}
+.container{
+    background: rgb(47, 47, 47);   
+    margin-top: 8px;
+}
+
+#aboutme{
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("https://i.pinimg.com/564x/1d/1c/8f/1d1c8f3db8902346934cdad1fbb7edfa.jpg");
+    background-size: cover;
+}
+#aboutme-box{
+    background-color: rgb(213, 213, 210);
+    width: 80%;
+    margin: auto;
+    opacity: 0.9;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 22px;
+    opacity: 0.8;
+}
+#aboutme-content{
+    text-indent: 50px; 
+    margin-left: 30px; 
+    margin-right: 30px; 
+    text-align: justify;
+    max-height: max-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#personal-info{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: url("https://i.pinimg.com/564x/1d/1c/8f/1d1c8f3db8902346934cdad1fbb7edfa.jpg");
+}
+#info{
+    background-color: rgb(207, 207, 207);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+table {
+    margin: auto;
+    line-height: 1;}
+h2{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 60px;
+    color: rgb(41, 47, 41);
+    margin-top: 0;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    font-family: 'Great Vibes', cursive;
+    padding-left: 100px;
+    letter-spacing: 5px;
+    font-weight: 200;
+    margin-top: 50px;
+    margin-bottom: 0;
+    line-height: normal;
+}
+#pic-container{
+    text-align: center; 
+    margin: 20px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px; 
+    padding: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    }
+#my-hobbies, #my-favorites{
+    display: flex;
+    justify-content: space-evenly;
+}
+#hobbies {
+    background-image: url("https://i.pinimg.com/564x/4f/fa/e1/4ffae1f6ebfecad0d769883aadc8b241.jpg");
+}
+#favorites{
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://cdn.pixabay.com/photo/2020/07/06/16/30/leaves-5377557_1280.jpg");
+    background-size: cover;
+}
+#class-schedule{
+    background-image: url("https://i.pinimg.com/564x/1d/1c/8f/1d1c8f3db8902346934cdad1fbb7edfa.jpg");
+    background-size: cover;
+}
+@media screen and (max-width: 300px){
+    #header-content-namepic{
+        flex-direction: column;
+    }
+
+}
+td {
+    padding-left: 40px;
+    padding-right: 20px;
+    line-height: 2;
+}
+th{
+        color: rgb(170, 130, 77);
+        font-size: 22px;
+}
+
+
+@media screen and (max-width: 601px),
+screen and (max-height:962){
+
+.info-container {
+      display: flex;
+      flex-direction: column;
+      height: 78vh;
+
+    }
+    :not(.header) > .header-content #header-content-namepic {
+        padding-left: 50px;
+    }
+ 
+    #aboutme-box{   
+        max-height: 24vh;
+        font-size: 15px;
+    }
+    h1, h2 {
+        font-size: 40px;
+        padding-left: 10px;
+    }
+    
+    .header {
+        padding-top: 0;
+        
+    }
+    #mypic {
+        max-width: 140px;
+    }
+    #personal-info, #my-hobbies, #my-favorites{
+        flex-direction: column;
+    }
+    td{
+        font-size: 10px;
+    }
+}
+  
+@media  screen and (max-width: 1285px)
+{
+    #my-hobbies, #my-favorites, #personal-info{
+        flex-direction: column;
+    }
+}
+    
+@media screen and (max-width: 1280px), 
+{
+    .header-content {
+        padding-top: 0;
+    }
+    #aboutme-box{
+        max-height: 100vh;
+    }
+    #aboutme-content{
+        font-size: 18px;
+    }
+    #personal-info,{
+        flex-direction: column;
+    }
+    #info{
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        min-width: 80%;
+    }
+    td{
+        padding-left:30px;
+    }
+   
+}
